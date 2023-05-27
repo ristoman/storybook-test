@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@700&display=swap');
+@import '../src/stories/variables.scss';
+
+.sbdocs.sbdocs-content {
+    .sbdocs-title.sb-unstyled, h1 {
+     font-family: 'Bitter', serif;
+     color: $wave-blue;
+     margin-bottom:$md;
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+    }
+    p{
+        font-size: $font-size-body;
+    }
+    *{
+        font-family: 'Inter', sans-serif;
+     }
+  }

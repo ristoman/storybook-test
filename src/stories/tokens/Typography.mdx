@@ -1,0 +1,78 @@
+import { Meta, Typeset, Unstyled } from '@storybook/blocks';
+import { Inter, Bitter } from 'next/font/google';
+
+<Meta title="Design Tokens/Typography" />
+
+export const typography = {
+  type: {
+    primary: '"Inter", "Helvetica Neue", Helvetica, Arial, sans-serif',
+    secondary: '"Bitter", "Georgia", serif'
+  },
+  weight: {
+    regular: '400',
+    bold: '700',
+  },
+  size: {
+    s1: 10,
+    s2: 12,
+    s3: 16,
+    m1: 20,
+    m2: 24,
+    m3: 32,
+    l1: 40,
+    l2: 48,
+  },
+};
+
+export const SampleText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.';
+
+# Typography
+
+## Bitter
+<Typeset
+  fontSizes={[
+    Number(typography.size.l2),
+  ]}
+  fontWeight={typography.weight.bold}
+  sampleText={SampleText}
+  fontFamily={typography.type.secondary}
+/>
+
+Bitter is the main headline typography of the identity. It is used exclusively for H1s and big, splashy titles that command attention. If you need to break up content or create sections inside a complex block of text, use Inter.
+
+**Weights:** 700(bold)
+
+**Uses**: H1 headlines and Hero screens
+
+## Inter
+Inter comprises most of our text content. Use it for body copy, lists, and for smaller headings. When used as a H2 ... H6, use the bold weight. Body copy is regular weight.
+
+**Weights:** 400(regular), 700(bold)
+
+**Uses**: Secondary headlines and body copy
+
+
+### Headlines
+<Typeset
+  fontSizes={[
+    Number(typography.size.s3),
+    Number(typography.size.m1),
+    Number(typography.size.m2),
+    Number(typography.size.m3),
+    Number(typography.size.l1),
+    Number(typography.size.l2),
+  ]}
+  fontWeight={typography.weight.bold}
+  sampleText={SampleText}
+  fontFamily={typography.type.primary}
+/>
+
+### Body Copy
+<Typeset
+  fontSizes={[
+    Number(typography.size.s3),
+  ]}
+  fontWeight={typography.weight.regular}
+  sampleText={SampleText}
+  fontFamily={typography.type.primary}
+/>

@@ -1,0 +1,108 @@
+@use "sass:color";
+
+/* CORPORATE COLORS */
+$talc-white: #ffffff;
+$mist-gray: #edf1f3;
+$onyx-black: #000000;
+$flamingo-pink: #f2627a;
+$wave-blue: #003d4f;
+$turmeric-yellow: #cc850a;
+$jade-green: #6B9E78;
+$amethyst-purple: #634F7D;
+
+/* NEUTRAL COLORS */
+$grey-5: #F8F8F8;
+$grey-10: #F0F1F1;
+$grey-20: #E9E9EA;
+$grey-30: #E1E2E3;
+$grey-40: #BDBEC0;
+$grey-50: #9A9C9E;
+$grey-60: #808285;
+$grey-70: #616364;
+$grey-80: #414343;
+$grey-90: #212223;
+
+$shadow-color: $grey-40;
+
+/* TINT COLORS */
+$flamingo-tint-50: #9b293c;
+$flamingo-tint-30: #bd4257;
+
+$wave-tint-70: #156c86;
+$wave-tint-60: #0d98c1;
+
+$turmeric-tint-70: #a06908;
+$turmeric-tint-50: #f39e0c;
+
+$jade-tint-60: #517b5c;
+$jade-tint-40: #78c58c;
+
+$sapphire-tint-70: #1f8290;
+$sapphire-tint-40: #53c4d3;
+
+$amethyst-tint-70: #4a3b5e;
+$amethyst-tint-30: #b0a1c4;
+
+/* DIMENSIONS */
+$base-dimension: 1rem;
+$scale: 2;
+
+$xxxs: $base-dimension * 0.0625;
+$xxs: $base-dimension * 0.125;
+$xs: $base-dimension * 0.25;
+$s: $base-dimension * 0.5;
+$sm: $base-dimension * 0.75;
+$md: $base-dimension;
+$lm: $base-dimension * 1.25;
+$l: $base-dimension * 1.5;
+$xl: $base-dimension * 2;
+$xxl: $base-dimension * 3;
+$xxxl: $base-dimension * 4;
+$xxxxl: $base-dimension * 5;
+
+/* typography */
+$typography-body: "Inter", sans-serif;
+$typography-title: "Bitter", serif;
+
+$font-size-base: 1rem;
+$font-size-body: $font-size-base;
+$font-size-sm: $font-size-body * 0.75;
+$font-size-xs: $font-size-body * 0.625;
+$font-size-h6: $font-size-body;
+$font-size-h5: $font-size-h6 *1.25;
+$font-size-h4: $font-size-h5 *1.2;
+$font-size-h3: $font-size-h4 *1.33;
+$font-size-h2: $font-size-h3 *1.25;
+$font-size-h1: $font-size-h3 *1.2;
+
+/* MIXINS */
+
+@mixin border-sm {
+  border-radius: $xs;
+}
+
+@mixin border-lg {
+  border-radius: $s;
+}
+
+@mixin border-xl {
+  border-radius: $md;
+}
+
+@mixin opacity-low {
+  opacity: 0.12;
+}
+
+@mixin opacity-mid {
+  opacity: 0.5;
+}
+
+@mixin opacity-hi {
+  opacity: 0.9;
+}
+
+@mixin elevated {
+  -webkit-box-shadow: 0px 0px 7px 0px color.adjust($shadow-color, $alpha:-0.5);
+  -moz-box-shadow: 0px 7px 8px 0px color.adjust($shadow-color, $alpha:-0.5);
+  box-shadow: 0px 7px 8px 0px color.adjust($shadow-color, $alpha:-0.5);
+}

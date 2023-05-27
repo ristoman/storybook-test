@@ -1,0 +1,65 @@
+import { Meta, ColorPalette, ColorItem } from '@storybook/blocks';
+import tokens from '../../tokens/tokens.json';
+
+<Meta title="Design Tokens/Colors" />
+
+# Main Colors
+---
+<ColorPalette>
+  <ColorItem
+    title="Flamingo Red"
+    subtitle="Primary Color - Accents and call to action"
+    colors={{ Main: '#f2627a', Tint1: '#bd4257' , Tint2: '#9b293c'}}
+  />
+   <ColorItem
+    title="Wave Blue"
+    subtitle="Secondary Color - Backgrounds and regular content"
+    colors={{ Main: '#003D4F', Tint1: '#156c86' , Tint2: '#0d98c1'}}
+  />
+</ColorPalette>
+
+# Accent Colors
+---
+<ColorPalette>
+  <ColorItem
+    title="Turmeric Yellow"
+    subtitle=""
+    colors={{ Main: '#CC850A', Tint1: '#a06908' , Tint2: '#f39e0c'}}
+  />
+   <ColorItem
+    title="Jade Green"
+    subtitle=""
+    colors={{ Main: '#6B9E78', Tint1: '#517b5c' , Tint2: '#78c58c'}}
+  />
+  <ColorItem
+    title="Sapphire Blue"
+    subtitle=""
+    colors={{ Main: '#47A1AD', Tint1: '#1f8290' , Tint2: '#53c4d3'}}
+  />
+  <ColorItem
+    title="Amethyst Purple"
+    subtitle=""
+    colors={{ Main: '#634F7D', Tint1: '#4a3b5e' , Tint2: '#b0a1c4'}}
+  />
+</ColorPalette>
+
+# Greys
+---
+<ColorPalette>
+  <ColorItem
+    title="Greyscale"
+    subtitle=""
+    colors={{
+      Grey5: '#F8F8F8',
+      Grey10: '#F0F1F1',
+      Grey20: '#E9E9EA',
+      Grey30: '#E1E2E3',
+      Grey40: '#BDBEC0',
+      Grey50: '#9A9C9E',
+      Grey60: '#808285',
+      Grey70: '#616364',
+      Grey80: '#414343',
+      Grey90: '#212223',
+    }}
+  />
+</ColorPalette>
